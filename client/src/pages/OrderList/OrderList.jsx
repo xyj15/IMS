@@ -178,13 +178,13 @@ const mockData = Array.from({ length: 10 }).map(() => {
   return {
     id: random(1, 100),
     goodId: random(200, 1000),
-    name: ['淘公仔', '天猫精灵', '蓝牙音响'][random(1, 2)],
+    name: ['羽毛球', '乒乓球', '运动鞋'][random(1, 2)],
     payment:
-      ['支付宝付款', '银行卡付款', '微信付款'][random(1, 2)] || '支付宝付款',
-    orderType: ['普通订单', '代付订单'][random(0, 1)],
+      ['支付宝付款', '现金', '微信付款'][random(1, 2)] || '支付宝付款',
+    orderType: ['普通订单', '其他'][random(0, 1)],
     createTime: '2018-12-12',
-    state: '派送中',
-    transport: ['快递发货', '上门自提', '同城配送'][random(0, 2)],
+    state: '已完成',
+    transport: ['快递发货', '上门自提'][random(0, 1)],
   };
 });
 
